@@ -51,10 +51,12 @@ Scenario C
 
         public SkuRulesConfig()
         {
-            ActiveOffers = new List<RuleItem>();
-            ActiveOffers.Add(new RuleItem{ItemNames = new List<string>{"A", "A", "A"}, OfferPrice = 130.0});
-            ActiveOffers.Add(new RuleItem { ItemNames = new List<string> { "B", "B" }, OfferPrice = 45.0 });
-            ActiveOffers.Add(new RuleItem { ItemNames = new List<string> { "C", "D" }, OfferPrice = 30.0 });
+            ActiveOffers = new List<RuleItem>
+            {
+                new RuleItem {ItemNames = new List<string> {"A", "A", "A"}, OfferPrice = 130.0},
+                new RuleItem {ItemNames = new List<string> {"B", "B"}, OfferPrice = 45.0},
+                new RuleItem {ItemNames = new List<string> {"C", "D"}, OfferPrice = 30.0}
+            };
 
         }
     }
